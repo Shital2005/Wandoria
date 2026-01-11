@@ -1,8 +1,6 @@
 .destinations-hero {
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("../assets/destinations.jpg") center/cover no-repeat;
-
+    background-color: #203a43;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +41,7 @@
     border-radius: 18px;
     overflow: hidden;
     text-decoration: none;
-    color: #000;
+    color: #2a5563;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

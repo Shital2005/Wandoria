@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/destination-detail.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <nav class="nav-links">
                 <a href="#landing">Home</a>
                 <a href="#destinations">Destinations</a>
-                <a href="#">Experiences</a>
+                <a href="#hero">Experiences</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -34,7 +35,7 @@
             </div>
         </header>
 
-         <section class="landing" id="landing">
+        <section class="landing" id="landing">
         <div class="landing-content">
             <h1 class="landing-title">Discover</h1>
             <h2 class="landing-subtitle" style="color:white"> The world, waiting for you</h2>
@@ -60,7 +61,7 @@
                     </div>
                 </a>
 
-                <a href="destination-detail/destination-switzerland.html" class="destination-card">
+                <a href="#switzerland-detail" class="destination-card">
                     <img src="assets/switzerland.jpg" alt="Switzerland">
                     <div class="card-content">
                         <h3>Switzerland</h3>
@@ -91,10 +92,6 @@
 
         </section>
 
-    </body>
-
-    </html>
-
     <input type="checkbox" id="login-toggle" hidden>
 
     <div class="login-modal">
@@ -107,7 +104,10 @@
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Password">
 
-            <button class="login-submit">Login</button>
+            <div class="login-buttons">
+                <button class="login-submit">Login</button>
+                <button class="login-submit">Sign Up</button>
+            </div>
 
             <span class="guest">Continue as Guest</span>
         </div>
@@ -179,6 +179,55 @@
 
     </section>
 
+
+    <!-- SWITZERLAND DETAIL -->
+    <section class="detail-hero" id="switzerland-detail">
+        <h1>Switzerland</h1>
+        <p>Alpine beauty and scenic lakes</p>
+    </section>
+
+    <section class="detail-content">
+
+        <div class="detail-description">
+            <h2>About the Destination</h2>
+            <p>
+                Switzerland offers breathtaking landscapes, snow-capped mountains,
+                crystal-clear lakes, and charming villages — perfect for nature lovers
+                and adventure seekers.
+            </p>
+        </div>
+
+        <!-- PACKAGES -->
+        <div class="packages">
+            <h2>Trip Packages</h2>
+
+            <div class="package-grid">
+
+                <div class="package-card">
+                    <h3>Explorer</h3>
+                    <p>3 Days / 2 Nights</p>
+                    <span>₹78,000</span>
+                    <button>Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <h3>Adventure</h3>
+                    <p>5 Days / 4 Nights</p>
+                    <span>₹1,05,000</span>
+                    <button>Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <h3>Luxury Escape</h3>
+                    <p>7 Days / 6 Nights</p>
+                    <span>₹1,45,000</span>
+                    <button>Book Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
     <!-- CONTACT HERO -->
     <section class="contact-hero" id="contact">
