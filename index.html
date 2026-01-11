@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/destination-detail.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/booking.css">
     <link rel="stylesheet" href="css/explore.css">
 </head>
 
@@ -111,7 +112,7 @@
                 <button class="login-submit">Sign Up</button>
             </div>
 
-            <span class="guest">Continue as Guest</span>
+            <span class="guest">Forgot password?</span>
         </div>
     </div>
 
@@ -206,207 +207,251 @@
                     <h3>Explorer</h3>
                     <p>3 Days / 2 Nights</p>
                     <span>₹78,000</span>
-                    <button>Book Now</button>
+                    <label for="booking-toggle" class="book-btn">Book Now</label>
+
                 </div>
 
                 <div class="package-card">
                     <h3>Adventure</h3>
                     <p>5 Days / 4 Nights</p>
                     <span>₹1,05,000</span>
-                    <button>Book Now</button>
+                    <label for="booking-toggle" class="book-btn">Book Now</label>
+
                 </div>
 
                 <div class="package-card">
                     <h3>Luxury Escape</h3>
                     <p>7 Days / 6 Nights</p>
                     <span>₹1,45,000</span>
-                    <button>Book Now</button>
+                    <label for="booking-toggle" class="book-btn">Book Now</label>
+
                 </div>
 
             </div>
         </div>
 
     </section>
+    <!-- BOOKING FORM TOGGLE -->
+    <input type="checkbox" id="booking-toggle" hidden>
+
+    <!-- BOOKING FORM MODAL -->
+    <div class="booking-modal">
+        <div class="booking-box">
+
+            <!-- CLOSE -->
+            <label for="booking-toggle" class="booking-close">×</label>
+
+            <h2>Book Your Trip</h2>
+            <p class="booking-subtitle">
+                Switzerland • Adventure Package
+            </p>
+
+            <!-- FORM -->
+            <form class="booking-form">
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+
+                <div class="form-row">
+                    <input type="date">
+                    <input type="number" placeholder="Travelers" min="1">
+                </div>
+
+                <button type="submit" class="booking-submit">
+                    Submit Booking
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
 
     <!-- GALLERY HERO -->
-<section class="gallery-hero" id="gallery">
-  <h1>Travel Gallery</h1>
-  <p>Moments from destinations around the world</p>
-</section>
+    <section class="gallery-hero" id="gallery">
+        <h1>Travel Gallery</h1>
+        <p>Moments from destinations around the world</p>
+    </section>
 
-<!-- GALLERY GRID -->
-<section class="gallery-section">
+    <!-- GALLERY GRID -->
+    <section class="gallery-section">
 
-  <div class="gallery-grid">
+        <div class="gallery-grid">
 
-    <!-- BALI -->
-    <a href="destination-detail/bali.html" class="gallery-card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Bali">
-      <div class="gallery-overlay">
-        <h3>Bali</h3>
-        <span>View Destination</span>
-      </div>
-    </a>
+            <!-- BALI -->
+            <a href="destination-detail/bali.html" class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                    alt="Bali">
+                <div class="gallery-overlay">
+                    <h3>Bali</h3>
+                    <span>View Destination</span>
+                </div>
+            </a>
 
-    <!-- SWITZERLAND -->
-    <a href="#switzerland-detail" class="gallery-card">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" alt="Switzerland">
-      <div class="gallery-overlay">
-        <h3>Switzerland</h3>
-        <span>View Destination</span>
-      </div>
-    </a>
+            <!-- SWITZERLAND -->
+            <a href="#switzerland-detail" class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80"
+                    alt="Switzerland">
+                <div class="gallery-overlay">
+                    <h3>Switzerland</h3>
+                    <span>View Destination</span>
+                </div>
+            </a>
 
-    <!-- ROME -->
-    <a href="destination-detail/rome.html" class="gallery-card">
-      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80" alt="Rome">
+            <!-- ROME -->
+            <a href="destination-detail/rome.html" class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
+                    alt="Rome">
 
-      <div class="gallery-overlay">
-        <h3>Rome</h3>
-        <span>View Destination</span>
-      </div>
-    </a>
+                <div class="gallery-overlay">
+                    <h3>Rome</h3>
+                    <span>View Destination</span>
+                </div>
+            </a>
 
-    <!-- FINLAND -->
-    <a href="destination-detail/finland.html" class="gallery-card">
-     <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80" alt="Finland">
+            <!-- FINLAND -->
+            <a href="destination-detail/finland.html" class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80"
+                    alt="Finland">
 
 
-      <div class="gallery-overlay">
-        <h3>Finland</h3>
-        <span>View Destination</span>
-      </div>
-    </a>
+                <div class="gallery-overlay">
+                    <h3>Finland</h3>
+                    <span>View Destination</span>
+                </div>
+            </a>
 
-  </div>
+        </div>
 
-</section>
+    </section>
 
 </body>
+
 </html>
 
-    <section class="contact-hero" id="contact">
-        <h1>Get in Touch</h1>
-        <p>We’d love to hear from you</p>
-    </section>
+<section class="contact-hero" id="contact">
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you</p>
+</section>
 
-    <section class="contact-section">
+<section class="contact-section">
 
-        <div class="contact-container">
+    <div class="contact-container">
 
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>
-                    Have a question, idea, or travel story to share?
-                    Reach out — our journey begins with a conversation.
-                </p>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>
+                Have a question, idea, or travel story to share?
+                Reach out — our journey begins with a conversation.
+            </p>
 
-                <ul>
-                    <li>📍 Mumbai, India</li>
-                    <li>📧 hello@wandoria.com</li>
-                    <li>📞 +91 98765 43210</li>
-                </ul>
-            </div>
-
-            <div class="contact-form">
-                <h2>Send a Message</h2>
-
-                <form>
-                    <input type="text" placeholder="Your Name" required minlength="2">
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required minlength="10"></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-
+            <ul>
+                <li>📍 Mumbai, India</li>
+                <li>📧 hello@wandoria.com</li>
+                <li>📞 +91 98765 43210</li>
+            </ul>
         </div>
 
-    </section>
+        <div class="contact-form">
+            <h2>Send a Message</h2>
 
+            <form>
+                <input type="text" placeholder="Your Name" required minlength="2">
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required minlength="10"></textarea>
 
-    <section class="explore-hero" id="explore">
-        <h1>Explore the World</h1>
-        <p>Journeys curated for every traveler</p>
-    </section>
-
-    <section class="explore-section">
-
-        <h2 class="section-title">Explore by Mood</h2>
-
-        <div class="mood-grid">
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
-
-                <span>Relax & Unwind</span>
-            </div>
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80">
-
-                <span>Adventure & Thrill</span>
-            </div>
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80">
-
-                <span>City Escapes</span>
-            </div>
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
-
-                <span>Nature & Wildlife</span>
-            </div>
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
-
-                <span>Romantic Getaways</span>
-            </div>
-
-            <div class="mood-card">
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80">
-
-
-                <span>Culture & History</span>
-            </div>
-
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="explore-section light-bg">
+<section class="explore-hero" id="explore">
+    <h1>Explore the World</h1>
+    <p>Journeys curated for every traveler</p>
+</section>
 
-        <h2 class="section-title">Curated Journeys</h2>
+<section class="explore-section">
 
-        <div class="journey-grid">
+    <h2 class="section-title">Explore by Mood</h2>
 
-            <div class="journey-card">
-                <h3>A slow week in Bali</h3>
-                <p>Tropical calm, beaches, and mindful living.</p>
-            </div>
+    <div class="mood-grid">
 
-            <div class="journey-card">
-                <h3>Swiss Alps by Train</h3>
-                <p>Scenic routes through mountains and lakes.</p>
-            </div>
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
 
-            <div class="journey-card">
-                <h3>Rome beyond the crowds</h3>
-                <p>Hidden streets and timeless culture.</p>
-            </div>
-
+            <span>Relax & Unwind</span>
         </div>
 
-    </section>
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80">
 
-    <section class="explore-cta">
-        <h2>Found your vibe?</h2>
-        <a href="#destinations" class="nav-btn">Browse Destinations</a>
-    </section>
+            <span>Adventure & Thrill</span>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80">
+
+            <span>City Escapes</span>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
+
+            <span>Nature & Wildlife</span>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+
+            <span>Romantic Getaways</span>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80">
+
+
+            <span>Culture & History</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="explore-section light-bg">
+
+    <h2 class="section-title">Curated Journeys</h2>
+
+    <div class="journey-grid">
+
+        <div class="journey-card">
+            <h3>A slow week in Bali</h3>
+            <p>Tropical calm, beaches, and mindful living.</p>
+        </div>
+
+        <div class="journey-card">
+            <h3>Swiss Alps by Train</h3>
+            <p>Scenic routes through mountains and lakes.</p>
+        </div>
+
+        <div class="journey-card">
+            <h3>Rome beyond the crowds</h3>
+            <p>Hidden streets and timeless culture.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="explore-cta">
+    <h2>Found your vibe?</h2>
+    <a href="#destinations" class="nav-btn">Browse Destinations</a>
+</section>
 
 
 
