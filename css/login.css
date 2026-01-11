@@ -1,0 +1,118 @@
+/* =========================
+   LOGIN MODAL STYLES
+   ========================= */
+
+/* BACKDROP */
+.login-modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
+}
+
+/* SHOW MODAL */
+#login-toggle:checked + .login-modal{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* LOGIN BOX */
+.login-box{
+  width: 360px;
+  padding: 32px 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+
+  animation: loginRise 0.6s ease-out;
+}
+
+/* TITLE */
+.login-box h2{
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+/* SUBTITLE */
+.login-box p{
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 22px;
+}
+
+/* INPUTS */
+.login-box input{
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-box input:focus{
+  border-color: #7fe7c3;
+}
+
+/* SUBMIT */
+.login-submit{
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: #7fe7c3;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-submit:hover{
+  background: #7fe7c3;
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* GUEST TEXT */
+.guest{
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+/* ENTRY ANIMATION */
+@keyframes loginRise{
+  from{
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px){
+  .login-box{
+    width: 90%;
+  }
+}

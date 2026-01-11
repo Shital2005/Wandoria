@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Wandoria</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/hero.css">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
@@ -24,50 +25,72 @@
             <a href="#">Contact</a>
         </nav>
         <div class="nav-actions">
-            <button class="login-btn">Login</button>
+            <label for="login-toggle" class="login-btn">Login</label>
+
             <button class="nav-btn">Explore</button>
         </div>
     </header>
 
+    <!-- LOGIN MODAL TOGGLE -->
+    <input type="checkbox" id="login-toggle" hidden>
+
+    <!-- LOGIN MODAL -->
+    <div class="login-modal">
+        <div class="login-box">
+            <label for="login-toggle" class="close-btn">×</label>
+
+            <h2>Welcome Back</h2>
+            <p>Sign in to plan your journey</p>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <button class="login-submit">Login</button>
+
+            <span class="guest">Continue as Guest</span>
+        </div>
+    </div>
+
+
     <section class="landing" id="landing">
         <div class="landing-content">
             <h1 class="landing-title">Discover</h1>
-            <h2  class="landing-subtitle" style="color:white"> The world, waiting for you</h2>
+            <h2 class="landing-subtitle" style="color:white"> The world, waiting for you</h2>
             <a href="#hero" class="get-started-btn">Get Started</a>
         </div>
     </section>
 
     <section id="hero" class="hero">
 
-  <div class="hero-slide slide-1">
-    <video autoplay muted loop playsinline>
-      <source src="videos/bali.mp4" type="video/mp4">
-    </video>
-    <h1 class="hero-title">Bali</h1>
-  </div>
+        <div class="hero-slide slide-1">
+            <video autoplay muted loop playsinline>
+                <source src="videos/bali.mp4" type="video/mp4">
+            </video>
+            <h1 class="hero-title">Bali</h1>
+        </div>
 
-  <div class="hero-slide slide-2">
-    <video autoplay muted loop playsinline>
-      <source src="videos/switzerland.mp4" type="video/mp4">
-    </video>
-    <h1 class="hero-title">Switzerland</h1>
-  </div>
+        <div class="hero-slide slide-2">
+            <video autoplay muted loop playsinline>
+                <source src="videos/switzerland.mp4" type="video/mp4">
+            </video>
+            <h1 class="hero-title">Switzerland</h1>
+        </div>
 
-   <div class="hero-slide slide-3">
-    <video autoplay muted loop playsinline>
-      <source src="videos/rome.mp4" type="video/mp4">
-    </video>
-    <h1 class="hero-title">Rome</h1>
-  </div>
+        <div class="hero-slide slide-3">
+            <video autoplay muted loop playsinline>
+                <source src="videos/rome.mp4" type="video/mp4">
+            </video>
+            <h1 class="hero-title">Rome</h1>
+        </div>
 
-  <div class="hero-slide slide-4">
-    <video autoplay muted loop playsinline>
-      <source src="videos/finland.mp4" type="video/mp4">
-    </video>
-    <h1 class="hero-title">Finland</h1>
-  </div>
+        <div class="hero-slide slide-4">
+            <video autoplay muted loop playsinline>
+                <source src="videos/finland.mp4" type="video/mp4">
+            </video>
+            <h1 class="hero-title">Finland</h1>
+        </div>
 
-</section>
+    </section>
 
 
 </body>
