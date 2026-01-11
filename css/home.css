@@ -9,7 +9,7 @@
 body{
   min-height: 100vh;
   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -112,7 +112,7 @@ body{
 }
 
 .hero h1{
-  font-size: 48px;
+  font-size: 100px;
   max-width: 800px;
 }
 
@@ -121,3 +121,79 @@ body{
     display: none;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
+
+/* LANDING SECTION */
+.landing{
+  height: 100vh;
+  background: url("../assets/landing.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.landing::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* CONTENT */
+.landing-content{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* DISCOVER TEXT ANIMATION */
+.landing-title{
+  font-family: 'Allura', cursive;
+  font-size: 140px;
+  color: #ffffff;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: discoverRise 1.6s ease-out forwards;
+}
+
+/* BUTTON */
+.get-started-btn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  border-radius: 40px;
+  background: #ffffff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0;
+  animation: buttonAppear 1s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+/* ANIMATIONS */
+@keyframes discoverRise{
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes buttonAppear{
+  to{
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+  .landing-title{
+    font-size: 80px;
+  }
+}
+
