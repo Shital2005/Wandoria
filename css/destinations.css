@@ -1,0 +1,97 @@
+.destinations-hero {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../assets/destinations.jpg") center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.destinations-hero h1 {
+    font-family: 'Allura', cursive;
+    font-size: 96px;
+}
+
+.destinations-hero p {
+    font-size: 18px;
+}
+
+.destinations-section {
+    height: 70vh;
+    padding: 20px 10% 80px;
+    background: #f7f9fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.destination-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-content span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #203a43;
+}
+
+@media (max-width: 1000px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destinations-hero h1 {
+        font-size: 64px;
+    }
+}

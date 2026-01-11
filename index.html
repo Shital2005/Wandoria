@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Wandoria</title>
-     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/destinations.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -14,29 +15,88 @@
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-script">Wandoria</span>
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-script">Wandoria</span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#landing">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#">Experiences</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <label for="login-toggle" class="login-btn">Login</label>
+                <button class="nav-btn">Explore</button>
+            </div>
+        </header>
+
+         <section class="landing" id="landing">
+        <div class="landing-content">
+            <h1 class="landing-title">Discover</h1>
+            <h2 class="landing-subtitle" style="color:white"> The world, waiting for you</h2>
+            <a href="#hero" class="get-started-btn">Get Started</a>
         </div>
+    </section>
 
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Destinations</a>
-            <a href="#">Experiences</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="nav-actions">
-            <label for="login-toggle" class="login-btn">Login</label>
+        <section class="destinations-hero" id="destinations">
+            <h1>Destinations</h1>
+            <p>Choose your next adventure</p>
+        </section>
 
-            <button class="nav-btn">Explore</button>
-        </div>
-    </header>
+        <section class="destinations-section">
 
-    <!-- LOGIN MODAL TOGGLE -->
+            <div class="destinations-grid">
+
+                <a href="destination-bali.html" class="destination-card">
+                    <img src="assets/bali.jpg" alt="Bali">
+                    <div class="card-content">
+                        <h3>Bali</h3>
+                        <p>Tropical Escape</p>
+                        <span>From ₹45,000</span>
+                    </div>
+                </a>
+
+                <a href="destination-switzerland.html" class="destination-card">
+                    <img src="assets/switzerland.jpg" alt="Switzerland">
+                    <div class="card-content">
+                        <h3>Switzerland</h3>
+                        <p>Alpine Beauty</p>
+                        <span>From ₹78,000</span>
+                    </div>
+                </a>
+
+                <a href="destination-rome.html" class="destination-card">
+                    <img src="assets/rome.jpg" alt="Rome">
+                    <div class="card-content">
+                        <h3>Rome</h3>
+                        <p>Timeless History</p>
+                        <span>From ₹62,000</span>
+                    </div>
+                </a>
+
+                <a href="destination-finland.html" class="destination-card">
+                    <img src="assets/finland.jpg" alt="Finland">
+                    <div class="card-content">
+                        <h3>Finland</h3>
+                        <p>Nordic Calm</p>
+                        <span>From ₹85,000</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </body>
+
+    </html>
+
     <input type="checkbox" id="login-toggle" hidden>
 
-    <!-- LOGIN MODAL -->
     <div class="login-modal">
         <div class="login-box">
             <label for="login-toggle" class="close-btn">×</label>
@@ -52,15 +112,6 @@
             <span class="guest">Continue as Guest</span>
         </div>
     </div>
-
-
-    <section class="landing" id="landing">
-        <div class="landing-content">
-            <h1 class="landing-title">Discover</h1>
-            <h2 class="landing-subtitle" style="color:white"> The world, waiting for you</h2>
-            <a href="#hero" class="get-started-btn">Get Started</a>
-        </div>
-    </section>
 
     <section id="hero" class="hero">
 
@@ -93,7 +144,7 @@
         </div>
 
     </section>
-    
+
     <section class="about-content" id="about">
 
         <h2 class="about-heading">Our Story</h2>
@@ -128,49 +179,47 @@
 
     </section>
 
-    
-  <!-- CONTACT HERO -->
-  <section class="contact-hero" id="contact">
-    <h1>Get in Touch</h1>
-    <p>We’d love to hear from you</p>
-  </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-section">
+    <!-- CONTACT HERO -->
+    <section class="contact-hero" id="contact">
+        <h1>Get in Touch</h1>
+        <p>We’d love to hear from you</p>
+    </section>
 
-    <div class="contact-container">
+    <section class="contact-section">
 
-      <!-- LEFT INFO -->
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p>
-          Have a question, idea, or travel story to share?
-          Reach out — our journey begins with a conversation.
-        </p>
+        <div class="contact-container">
 
-        <ul>
-          <li>📍 Mumbai, India</li>
-          <li>📧 hello@wandoria.com</li>
-          <li>📞 +91 98765 43210</li>
-        </ul>
-      </div>
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    Have a question, idea, or travel story to share?
+                    Reach out — our journey begins with a conversation.
+                </p>
 
-      <!-- RIGHT FORM -->
-      <div class="contact-form">
-        <h2>Send a Message</h2>
+                <ul>
+                    <li>📍 Mumbai, India</li>
+                    <li>📧 hello@wandoria.com</li>
+                    <li>📞 +91 98765 43210</li>
+                </ul>
+            </div>
 
-        <form>
-          <input type="text" placeholder="Your Name" required minlength="2">
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required minlength="10"></textarea>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+                <form>
+                    <input type="text" placeholder="Your Name" required minlength="2">
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required minlength="10"></textarea>
 
-    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
 
-  </section>
+        </div>
+
+    </section>
 
 
 
