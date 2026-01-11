@@ -1,7 +1,7 @@
 
 .explore-hero{
   height: 40vh;
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  background-color: #203a43,
               url("../assets/explore-hero.jpg") center/cover no-repeat;
 
   display: flex;
