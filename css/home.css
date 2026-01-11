@@ -99,7 +99,7 @@ body{
 }
 
 .nav-btn:hover{
-  background: #ffd369;
+  background: #7fe7c3;
 }
 
 .hero{
@@ -136,7 +136,6 @@ html{
   overflow: hidden;
 }
 
-/* DARK OVERLAY */
 .landing::after{
   content: "";
   position: absolute;
@@ -144,27 +143,31 @@ html{
   background: rgba(0,0,0,0.45);
 }
 
-/* CONTENT */
 .landing-content{
   position: relative;
   z-index: 2;
   text-align: center;
 }
 
-/* DISCOVER TEXT ANIMATION */
 .landing-title{
   font-family: 'Allura', cursive;
   font-size: 140px;
   color: #ffffff;
-  transform: translateY(200px);
-  opacity: 0;
-  animation: discoverRise 1.6s ease-out forwards;
+  animation: riseUp 1.6s ease-out forwards;
 }
 
-/* BUTTON */
+.landing-subtitle{
+  margin-top: 8px;
+  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  opacity: 1;
+  animation: riseUp 1.6s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
 .get-started-btn{
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 28px;
   padding: 14px 40px;
   border-radius: 40px;
   background: #ffffff;
@@ -172,25 +175,24 @@ html{
   font-weight: 600;
   text-decoration: none;
   opacity: 0;
-  animation: buttonAppear 1s ease-out forwards;
-  animation-delay: 1.2s;
+  animation: riseUp 1.6s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.get-started-btn:hover{
+   background: #7fe7c3;
 }
 
-/* ANIMATIONS */
-@keyframes discoverRise{
+@keyframes riseUp{
+  from{
+    transform: translateY(120px);
+    opacity: 0;
+  }
   to{
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-@keyframes buttonAppear{
-  to{
-    opacity: 1;
-  }
-}
-
-/* MOBILE */
 @media (max-width: 768px){
   .landing-title{
     font-size: 80px;
