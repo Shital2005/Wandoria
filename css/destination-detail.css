@@ -1,0 +1,96 @@
+/* HERO */
+.detail-hero{
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("../assets/switzerland.jpg") center/cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.detail-hero h1{
+  font-family: 'Allura', cursive;
+  font-size: 96px;
+}
+
+.detail-hero p{
+  font-size: 18px;
+}
+
+/* CONTENT */
+.detail-content{
+  padding: 120px 10%;
+  background: #f7f9fb;
+}
+
+.detail-description{
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.detail-description h2{
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #203a43;
+}
+
+.detail-description p{
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* PACKAGES */
+.packages h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.package-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.package-card{
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.package-card h3{
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.package-card span{
+  display: block;
+  margin: 14px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.package-card button{
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #7fe7c3;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .package-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .detail-hero h1{
+    font-size: 64px;
+  }
+}
