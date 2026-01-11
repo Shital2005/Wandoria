@@ -4,10 +4,9 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: #000;
+  background: url("../assets/landing.jpg") center/cover no-repeat;
 }
 
-/* SLIDES */
 .hero-slide{
   position: absolute;
   inset: 0;
@@ -50,33 +49,33 @@
   text-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
 
-/* 🔥 GAPLESS UPWARD SLIDE (OVERLAP GUARANTEED) */
 @keyframes slideUpOverlap{
-  /* below viewport */
+  /* start below */
   0%{
     transform: translateY(100%);
   }
 
-  /* enter fast */
-  10%{
+  /* ⚡ FAST ENTRY (~1s) */
+  3%{
     transform: translateY(0);
   }
 
-  /* stay fully visible */
+  /* stay visible */
   40%{
     transform: translateY(0);
   }
 
-  /* exit upward */
-  55%{
+  /* fast exit */
+  43%{
     transform: translateY(-100%);
   }
 
-  /* remain above */
+  /* remain hidden */
   100%{
     transform: translateY(-100%);
   }
 }
+
 
 /* MOBILE */
 @media (max-width: 768px){
