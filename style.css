@@ -30,13 +30,14 @@ body{
   /* z-index: 1000; */
 }
 
-.logo{
-  font-size: 26px;
-  font-weight: 700;
+.logo-script{
+  font-family: 'Allura', cursive;
+  font-size: 44px;
+  font-weight: 600;
   color: #ffffff;
   letter-spacing: 1px;
-  font-family: 'Playfair Display', serif;
 }
+
 
 .nav-links{
   display: flex;
