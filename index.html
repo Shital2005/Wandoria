@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Wandoria</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -29,9 +29,93 @@
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Discover the World with Wandoria</h1>
+    <section id="home" class="hero">
+
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+
+        <div class="slides-wrapper">
+            <div class="hero-slide slide1">
+                <video autoplay muted playsinline>
+                    <source src="videos/bali.mp4" type="video/mp4">
+                </video>
+                <h1 class="hero-title">Bali</h1>
+            </div>
+
+            <div class="hero-slide slide2">
+                <video autoplay muted playsinline>
+                    <source src="videos/switzerland.mp4" type="video/mp4">
+                </video>
+                <h1 class="hero-title">Switzerland</h1>
+            </div>
+
+            <div class="hero-slide slide3">
+                <video autoplay muted playsinline>
+                    <source src="videos/rome.mp4" type="video/mp4">
+                </video>
+                <h1 class="hero-title">Rome</h1>
+            </div>
+        </div>
+
+        <label for="slide1" class="hero-nav prev nav-from-2">‹</label>
+        <label for="slide2" class="hero-nav prev nav-from-3">‹</label>
+
+        <label for="slide2" class="hero-nav next nav-from-1">›</label>
+        <label for="slide3" class="hero-nav next nav-from-2">›</label>
+
     </section>
+
+    <script>
+        const slides = document.querySelectorAll('.hero-slide');
+        const radios = document.querySelectorAll('input[name="slider"]');
+        let currentIndex = 0;
+        let autoPlayInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                const video = slide.querySelector('video');
+                if (i !== index) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            });
+            const currentVideo = slides[index].querySelector('video');
+            currentVideo.currentTime = 0;
+            currentVideo.play();
+            radios[index].checked = true;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function startAutoPlay() {
+            clearInterval(autoPlayInterval);
+            autoPlayInterval = setInterval(nextSlide, 15000);
+        }
+        radios.forEach((radio, index) => {
+            radio.addEventListener('change', () => {
+                if (radio.checked) {
+                    currentIndex = index;
+                    showSlide(index);
+                    startAutoPlay();
+                }
+            });
+        });
+
+        slides.forEach((slide, index) => {
+            const video = slide.querySelector('video');
+            video.addEventListener('ended', () => {
+                if (radios[index].checked) {
+                    nextSlide();
+                }
+            });
+        });
+        showSlide(0);
+        startAutoPlay();
+    </script>
 
 </body>
 
