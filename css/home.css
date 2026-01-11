@@ -14,11 +14,11 @@ body{
 
 .navbar{
   position: fixed;
-  top: 20px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  padding: 16px 40px;
+  width: 100%;
+  padding: 8px 32px;
 
   display: flex;
   align-items: center;
