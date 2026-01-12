@@ -41,7 +41,6 @@
   line-height: 1.7;
 }
 
-/* PACKAGES */
 .packages h2{
   font-size: 32px;
   margin-bottom: 30px;
@@ -88,7 +87,6 @@
   transform: scale(1.05);
 }
 
-/* BOOKING MODAL */
 .booking-modal{
   position: fixed;
   inset: 0;
@@ -179,7 +177,6 @@
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px){
   .package-grid{
     grid-template-columns: 1fr;

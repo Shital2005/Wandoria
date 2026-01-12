@@ -113,7 +113,7 @@
                 <button class="login-submit">Sign Up</button>
             </div>
 
-            <span class="guest">Forgot password?</span>
+            <span>Forgot password?</span>
         </div>
     </div>
 
@@ -186,7 +186,7 @@
     <section class="detail-hero" id="switzerland-detail">
         <h1>Switzerland</h1>
         <p>Alpine beauty and scenic lakes</p>
-    </section>
+    </section>4
 
     <section class="detail-content">
 
@@ -208,46 +208,40 @@
                     <h3>Explorer</h3>
                     <p>3 Days / 2 Nights</p>
                     <span>₹78,000</span>
-                    <label for="booking-toggle" class="book-btn">Book Now</label>
-
+                    <label for="booking-toggle" class="book-btn" data-destination="Switzerland" data-package="Explorer Package">Book Now</label>
                 </div>
 
                 <div class="package-card">
                     <h3>Adventure</h3>
                     <p>5 Days / 4 Nights</p>
                     <span>₹1,05,000</span>
-                    <label for="booking-toggle" class="book-btn">Book Now</label>
-
+                    <label for="booking-toggle" class="book-btn" data-destination="Switzerland" data-package="Adventure Package">Book Now</label>
                 </div>
 
                 <div class="package-card">
                     <h3>Luxury Escape</h3>
                     <p>7 Days / 6 Nights</p>
                     <span>₹1,45,000</span>
-                    <label for="booking-toggle" class="book-btn">Book Now</label>
-
+                    <label for="booking-toggle" class="book-btn" data-destination="Switzerland" data-package="Luxury Escape Package">Book Now</label>
                 </div>
 
             </div>
         </div>
 
     </section>
-    <!-- BOOKING FORM TOGGLE -->
+
     <input type="checkbox" id="booking-toggle" hidden>
 
-    <!-- BOOKING FORM MODAL -->
     <div class="booking-modal">
         <div class="booking-box">
 
-            <!-- CLOSE -->
             <label for="booking-toggle" class="booking-close">×</label>
 
             <h2>Book Your Trip</h2>
-            <p class="booking-subtitle">
+            <p class="booking-subtitle" id="booking-subtitle">
                 Switzerland • Adventure Package
             </p>
 
-            <!-- FORM -->
             <form class="booking-form">
 
                 <input type="text" placeholder="Full Name" required>
@@ -268,20 +262,16 @@
         </div>
     </div>
 
-
-    <!-- GALLERY HERO -->
     <section class="gallery-hero" id="gallery">
         <h1>Travel Gallery</h1>
         <p>Moments from destinations around the world</p>
     </section>
 
-    <!-- GALLERY GRID -->
     <section class="gallery-section">
 
         <div class="gallery-grid">
 
-            <!-- BALI -->
-            <a href="destination-detail/bali.html" class="gallery-card">
+            <a href="" class="gallery-card">
                 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
                     alt="Bali">
                 <div class="gallery-overlay">
@@ -290,7 +280,6 @@
                 </div>
             </a>
 
-            <!-- SWITZERLAND -->
             <a href="#switzerland-detail" class="gallery-card">
                 <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80"
                     alt="Switzerland">
@@ -300,8 +289,7 @@
                 </div>
             </a>
 
-            <!-- ROME -->
-            <a href="destination-detail/rome.html" class="gallery-card">
+            <a href="" class="gallery-card">
                 <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
                     alt="Rome">
 
@@ -310,9 +298,7 @@
                     <span>View Destination</span>
                 </div>
             </a>
-
-            <!-- FINLAND -->
-            <a href="destination-detail/finland.html" class="gallery-card">
+            <a href="" class="gallery-card">
                 <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80"
                     alt="Finland">
 
@@ -384,38 +370,31 @@
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
-
             <span>Relax & Unwind</span>
         </div>
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80">
-
             <span>Adventure & Thrill</span>
         </div>
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80">
-
             <span>City Escapes</span>
         </div>
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
-
             <span>Nature & Wildlife</span>
         </div>
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
-
             <span>Romantic Getaways</span>
         </div>
 
         <div class="mood-card">
             <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80">
-
-
             <span>Culture & History</span>
         </div>
 
@@ -456,54 +435,64 @@
 
 <footer class="footer">
 
-  <div class="footer-container">
+    <div class="footer-container">
 
-    <!-- BRAND -->
-    <div class="footer-brand">
-      <h2 class="footer-logo">Wandoria</h2>
-      <p>
-        Discover destinations, stories, and journeys
-        crafted for every kind of traveler.
-      </p>
+        <div class="footer-brand">
+            <h2 class="footer-logo">Wandoria</h2>
+            <p>
+                Discover destinations, stories, and journeys
+                crafted for every kind of traveler.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#landing">Home</a>
+            <a href="#destinations">Explore</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Popular Destinations</h4>
+            <a href="">Bali</a>
+            <a href="#switzerland-detail">Switzerland</a>
+            <a href="">Rome</a>
+            <a href="">Finland</a>
+        </div>
+
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>📍 India</p>
+            <p>📧 hello@wandoria.com</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
+
     </div>
 
-    <!-- LINKS -->
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="explore.html">Explore</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+    <div class="footer-bottom">
+        <p>© 2026 Wandoria. All rights reserved.</p>
     </div>
-
-    <!-- DESTINATIONS -->
-    <div class="footer-links">
-      <h4>Popular Destinations</h4>
-      <a href="destination-detail/bali.html">Bali</a>
-      <a href="destination-detail/switzerland.html">Switzerland</a>
-      <a href="destination-detail/rome.html">Rome</a>
-      <a href="destination-detail/finland.html">Finland</a>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>📍 India</p>
-      <p>📧 hello@wandoria.com</p>
-      <p>📞 +91 98765 43210</p>
-    </div>
-
-  </div>
-
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
-    <p>© 2026 Wandoria. All rights reserved.</p>
-  </div>
 
 </footer>
 
-
+<script>
+    // Update booking modal subtitle based on selected package
+    document.querySelectorAll('.book-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const destination = this.getAttribute('data-destination');
+            const packageName = this.getAttribute('data-package');
+            const subtitle = document.getElementById('booking-subtitle');
+            
+            if (destination && packageName && subtitle) {
+                subtitle.textContent = `${destination} • ${packageName}`;
+            }
+        });
+    });
+</script>
 
 </body>
 

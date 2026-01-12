@@ -57,7 +57,7 @@ body{
   left: 0;
   bottom: -6px;
   width: 0%;
-  height: 2px;
+  height: 2px;                          
   background: #ffffff;
   transition: 0.3s ease;
 }
@@ -127,7 +127,6 @@ html{
   scroll-behavior: smooth;
 }
 
-/* LANDING SECTION */
 .landing{
   height: 100vh;
   background: url("../assets/landing.jpg") center/cover no-repeat;
