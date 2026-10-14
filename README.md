@@ -1,4 +1,4 @@
-<img width="1847" height="1018" alt="Screenshot 2026-10-14 222950" src="https://github.com/user-attachments/assets/cb220c21-73b9-4c79-9612-8cf50fe6607c" /># 🌍 Wandoria — Discover the World
+# 🌍 Wandoria — Discover the World
 
 <p align="center">
   A modern and visually appealing travel website designed to inspire your next adventure.
